@@ -1,6 +1,6 @@
 HEAD
 # Core backend
-flask==2.3.4
+flask>=2.3,<4.0
 flask-cors==3.1.1
 requests==2.31.0
 python-dotenv==1.1.1
