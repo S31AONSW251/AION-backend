@@ -87,7 +87,7 @@ primp==0.15.0
 propcache==0.3.2
 psutil==7.0.0
 py-cpuinfo==9.0.0
-PyAudio @ file:///C:/Users/riyar/Downloads/aion_v15/PyAudio-0.2.14-cp310-cp310-win_amd64.whl
+PyAudio==0.2.14
 pycparser==2.22
 pydantic==2.11.7
 pydantic_core==2.33.2
