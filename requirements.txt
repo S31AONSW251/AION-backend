@@ -1,3 +1,4 @@
+HEAD
 # Core backend
 flask==2.3.4
 flask-cors==3.1.1
@@ -57,5 +58,13 @@ PyQt6>=6.9.1
 PyQt6-Qt6>=6.9.1
 PyQt6-sip>=13.10.2
 
-# Web automation
-pyppeteer==2.0.0
+
+Flask==3.1.2
+flask-cors==6.0.1
+requests==2.32.5
+duckduckgo_search==8.1.1
+openai==1.92.3
+torch==2.5.1+cu121
+transformers==4.55.2
+gunicorn==23.0.0
+
