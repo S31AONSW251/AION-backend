@@ -67,4 +67,4 @@ openai==1.92.3
 torch==2.5.1+cu121
 transformers==4.55.2
 gunicorn==23.0.0
-
+sentencepiece
