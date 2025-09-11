@@ -1,10 +1,10 @@
 HEAD
 # Core backend
 flask>=2.3,<4.0
-flask-cors==3.1.1
+flask-cors>=3.0.10,<4.0.0
 requests==2.31.0
 python-dotenv==1.1.1
-
+gunicorn --bind 0.0.0.0:${PORT:-8000} server:app
 # AI & NLP
 openai==1.92.3
 nltk==3.9.1
