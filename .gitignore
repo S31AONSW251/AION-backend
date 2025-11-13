@@ -1,0 +1,31 @@
+# Python cache and environment
+__pycache__/
+*.pyc
+.env
+.venv/
+.env/
+*.pkl
+*.pt
+*.h5
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Model / cache directories
+huggingface/
+transformers_cache/
+cache/
+checkpoints/
+outputs/
+runs/
+
+# VSCode and IDE
+.vscode/
+.idea/

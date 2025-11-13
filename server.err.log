@@ -1,0 +1,118 @@
+C:\Users\riyar\Miniconda3\Lib\site-packages\flask_limiter\_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading pipeline components...:  43%|####2     | 3/7 [00:00<00:00, 17.71it/s]Loading pipeline components...:  71%|#######1  | 5/7 [00:00<00:00,  7.92it/s]Loading pipeline components...: 100%|##########| 7/7 [00:00<00:00, 11.29it/s]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|####      | 2/5 [00:00<00:00,  9.20it/s]Loading pipeline components...: 100%|##########| 5/5 [00:00<00:00, 11.93it/s]Loading pipeline components...: 100%|##########| 5/5 [00:00<00:00, 11.50it/s]
+[2025-11-10 10:34:39,258] INFO Starting AION backend on 0.0.0.0:5000
+[2025-11-10 10:34:39,269] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.25.116.251:5000
+[2025-11-10 10:34:39,269] INFO [33mPress CTRL+C to quit[0m
+[2025-11-10 10:34:44,188] INFO 127.0.0.1 - - [10/Nov/2025 10:34:44] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:35:13,503] INFO 127.0.0.1 - - [10/Nov/2025 10:35:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:36:13,189] INFO 127.0.0.1 - - [10/Nov/2025 10:36:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:37:13,485] INFO 127.0.0.1 - - [10/Nov/2025 10:37:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:38:13,191] INFO 127.0.0.1 - - [10/Nov/2025 10:38:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:39:13,487] INFO 127.0.0.1 - - [10/Nov/2025 10:39:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:39:17,434] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=The%20impact%20of%20quantum%20computing%20on%20cryptography 200
+[2025-11-10 10:39:18,013] INFO response: https://search.brave.com/search?q=The+impact+of+quantum+computing+on+cryptography&source=web 200
+[2025-11-10 10:39:18,548] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=The%20impact%20of%20quantum%20computing%20on%20cryptography%20images%20photos 200
+[2025-11-10 10:39:20,517] INFO response: https://www.mojeek.com/search?q=The+impact+of+quantum+computing+on+cryptography+images+photos 200
+[2025-11-10 10:39:21,137] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=in-depth%20analysis%20of%20The%20impact%20of%20quantum%20computing%20on%20cryptography 200
+[2025-11-10 10:39:21,346] INFO response: https://search.brave.com/search?q=in-depth+analysis+of+The+impact+of+quantum+computing+on+cryptography&source=web 200
+[2025-11-10 10:39:21,787] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=The%20impact%20of%20quantum%20computing%20on%20cryptography%20statistics%20and%20facts 200
+[2025-11-10 10:39:23,191] INFO HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+[2025-11-10 10:39:23,835] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=perspectives%20on%20The%20impact%20of%20quantum%20computing%20on%20cryptography 200
+[2025-11-10 10:39:24,084] INFO response: https://www.bing.com/search?q=perspectives+on+The+impact+of+quantum+computing+on+cryptography&pq=perspectives+on+The+impact+of+quantum+computing+on+cryptography&cc=en 200
+[2025-11-10 10:39:33,623] INFO 127.0.0.1 - - [10/Nov/2025 10:39:33] "POST /consciousness/research HTTP/1.1" 200 -
+[2025-11-10 10:40:13,205] INFO 127.0.0.1 - - [10/Nov/2025 10:40:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:41:13,496] INFO 127.0.0.1 - - [10/Nov/2025 10:41:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:42:13,180] INFO 127.0.0.1 - - [10/Nov/2025 10:42:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:43:13,500] INFO 127.0.0.1 - - [10/Nov/2025 10:43:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:44:13,189] INFO 127.0.0.1 - - [10/Nov/2025 10:44:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:45:13,491] INFO 127.0.0.1 - - [10/Nov/2025 10:45:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:46:13,190] INFO 127.0.0.1 - - [10/Nov/2025 10:46:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:47:13,494] INFO 127.0.0.1 - - [10/Nov/2025 10:47:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:48:13,179] INFO 127.0.0.1 - - [10/Nov/2025 10:48:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:49:13,494] INFO 127.0.0.1 - - [10/Nov/2025 10:49:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:50:13,183] INFO 127.0.0.1 - - [10/Nov/2025 10:50:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:51:13,487] INFO 127.0.0.1 - - [10/Nov/2025 10:51:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:52:13,182] INFO 127.0.0.1 - - [10/Nov/2025 10:52:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:52:55,309] INFO 127.0.0.1 - - [10/Nov/2025 10:52:55] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:03,187] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=DARK%20MATTER 200
+[2025-11-10 10:53:03,200] INFO response: https://search.yahoo.com/search;_ylt=4sqitI3QPLtX2ZqukQFFnp7a;_ylu=bbGW8JKx7y_W9vF8ukyydv9Tby3FoLfeXBeTBQFlvJXmvh0?p=DARK+MATTER 200
+[2025-11-10 10:53:03,523] INFO response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Dark%20matter&explaintext=0&exintro=0&redirects=1 200
+[2025-11-10 10:53:04,028] INFO 127.0.0.1 - - [10/Nov/2025 10:53:04] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:04,704] INFO 127.0.0.1 - - [10/Nov/2025 10:53:04] "POST /api/retrieve HTTP/1.1" 200 -
+[2025-11-10 10:53:04,714] INFO 127.0.0.1 - - [10/Nov/2025 10:53:04] "OPTIONS /consciousness/add-episodic-memory HTTP/1.1" 200 -
+[2025-11-10 10:53:04,715] INFO 127.0.0.1 - - [10/Nov/2025 10:53:04] "OPTIONS /consciousness/research HTTP/1.1" 200 -
+[2025-11-10 10:53:04,799] INFO 127.0.0.1 - - [10/Nov/2025 10:53:04] "POST /consciousness/add-episodic-memory HTTP/1.1" 200 -
+[2025-11-10 10:53:05,163] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=DARK%20MATTER 200
+[2025-11-10 10:53:05,497] INFO response: https://yandex.com/search/site/?text=DARK+MATTER&web=1&searchid=5083698 200
+[2025-11-10 10:53:05,567] INFO 127.0.0.1 - - [10/Nov/2025 10:53:05] "POST /api/advanced-search HTTP/1.1" 200 -
+[2025-11-10 10:53:05,631] INFO response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Dark%20matter&explaintext=0&exintro=0&redirects=1 200
+[2025-11-10 10:53:06,111] INFO response: https://yandex.com/search/site/?text=DARK+MATTER&web=1&searchid=2195791 200
+[2025-11-10 10:53:06,881] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=DARK%20MATTER%20images%20photos 200
+[2025-11-10 10:53:07,569] INFO response: https://yandex.com/search/site/?text=DARK+MATTER+images+photos&web=1&searchid=9250075 200
+[2025-11-10 10:53:08,367] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=in-depth%20analysis%20of%20DARK%20MATTER 200
+[2025-11-10 10:53:08,399] INFO response: https://search.yahoo.com/search;_ylt=tjmYj6snmpX4rWY0TkKYDQo2;_ylu=vnulvzvVIDAZlGeii3PN78N3sxiTgGLosJXvADQwU_GIbIU?p=in-depth+analysis+of+DARK+MATTER 200
+[2025-11-10 10:53:10,502] INFO response: https://yandex.com/search/site/?text=in-depth+analysis+of+DARK+MATTER&web=1&searchid=8422832 200
+[2025-11-10 10:53:11,388] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=DARK%20MATTER%20statistics%20and%20facts 200
+[2025-11-10 10:53:11,703] INFO response: https://search.brave.com/search?q=DARK+MATTER+statistics+and+facts&source=web 200
+[2025-11-10 10:53:12,479] INFO response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=perspectives%20on%20DARK%20MATTER 200
+[2025-11-10 10:53:12,495] INFO response: https://search.yahoo.com/search;_ylt=-X-ejfj3DpFj3e9vZr_RSGxb;_ylu=_addZLsFvXRPkydEd1IA8X3t-qjBNVpeBUSgNmmd-mK6oZM?p=perspectives+on+DARK+MATTER 200
+[2025-11-10 10:53:14,390] INFO response: https://search.brave.com/search?q=perspectives+on+DARK+MATTER&source=web 200
+[2025-11-10 10:53:14,500] INFO 127.0.0.1 - - [10/Nov/2025 10:53:14] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:24,179] INFO 127.0.0.1 - - [10/Nov/2025 10:53:24] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:27,211] INFO 127.0.0.1 - - [10/Nov/2025 10:53:27] "POST /consciousness/research HTTP/1.1" 200 -
+[2025-11-10 10:53:34,034] INFO 127.0.0.1 - - [10/Nov/2025 10:53:34] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:43,732] INFO 127.0.0.1 - - [10/Nov/2025 10:53:43] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:53:54,043] INFO 127.0.0.1 - - [10/Nov/2025 10:53:54] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:03,728] INFO 127.0.0.1 - - [10/Nov/2025 10:54:03] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:14,030] INFO 127.0.0.1 - - [10/Nov/2025 10:54:14] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:23,736] INFO 127.0.0.1 - - [10/Nov/2025 10:54:23] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:34,041] INFO 127.0.0.1 - - [10/Nov/2025 10:54:34] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:43,725] INFO 127.0.0.1 - - [10/Nov/2025 10:54:43] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:54:54,035] INFO 127.0.0.1 - - [10/Nov/2025 10:54:54] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:55:03,735] INFO 127.0.0.1 - - [10/Nov/2025 10:55:03] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:55:14,492] INFO 127.0.0.1 - - [10/Nov/2025 10:55:14] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:56:13,197] INFO 127.0.0.1 - - [10/Nov/2025 10:56:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:57:13,489] INFO 127.0.0.1 - - [10/Nov/2025 10:57:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:58:13,190] INFO 127.0.0.1 - - [10/Nov/2025 10:58:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:59:13,502] INFO 127.0.0.1 - - [10/Nov/2025 10:59:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:59:43,057] INFO 127.0.0.1 - - [10/Nov/2025 10:59:43] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:59:44,021] INFO 127.0.0.1 - - [10/Nov/2025 10:59:44] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:59:53,404] INFO 127.0.0.1 - - [10/Nov/2025 10:59:53] "POST /api/retrieve HTTP/1.1" 200 -
+[2025-11-10 10:59:53,411] INFO 127.0.0.1 - - [10/Nov/2025 10:59:53] "OPTIONS /consciousness/add-episodic-memory HTTP/1.1" 200 -
+[2025-11-10 10:59:53,421] INFO 127.0.0.1 - - [10/Nov/2025 10:59:53] "POST /consciousness/add-episodic-memory HTTP/1.1" 200 -
+[2025-11-10 10:59:53,976] INFO 127.0.0.1 - - [10/Nov/2025 10:59:53] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 10:59:58,843] INFO 127.0.0.1 - - [10/Nov/2025 10:59:58] "POST /api/generate/stream HTTP/1.1" 200 -
+[2025-11-10 11:00:02,457] INFO 127.0.0.1 - - [10/Nov/2025 11:00:02] "POST /api/sync-conversation HTTP/1.1" 200 -
+[2025-11-10 11:00:04,037] INFO 127.0.0.1 - - [10/Nov/2025 11:00:04] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:00:13,722] INFO 127.0.0.1 - - [10/Nov/2025 11:00:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:00:24,037] INFO 127.0.0.1 - - [10/Nov/2025 11:00:24] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:00:33,722] INFO 127.0.0.1 - - [10/Nov/2025 11:00:33] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:00:44,040] INFO 127.0.0.1 - - [10/Nov/2025 11:00:44] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:00:53,725] INFO 127.0.0.1 - - [10/Nov/2025 11:00:53] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:01:04,045] INFO 127.0.0.1 - - [10/Nov/2025 11:01:04] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:01:14,178] INFO 127.0.0.1 - - [10/Nov/2025 11:01:14] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:02:13,514] INFO 127.0.0.1 - - [10/Nov/2025 11:02:13] "GET /api/status/providers HTTP/1.1" 200 -
+[2025-11-10 11:03:13,191] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:03:13,205] INFO 127.0.0.1 - - [10/Nov/2025 11:03:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:04:13,497] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:04:13,498] INFO 127.0.0.1 - - [10/Nov/2025 11:04:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:05:13,188] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:05:13,189] INFO 127.0.0.1 - - [10/Nov/2025 11:05:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:06:13,487] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:06:13,488] INFO 127.0.0.1 - - [10/Nov/2025 11:06:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:07:13,188] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:07:13,189] INFO 127.0.0.1 - - [10/Nov/2025 11:07:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:08:13,494] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:08:13,508] INFO 127.0.0.1 - - [10/Nov/2025 11:08:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:09:13,179] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:09:13,180] INFO 127.0.0.1 - - [10/Nov/2025 11:09:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:10:13,495] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:10:13,508] INFO 127.0.0.1 - - [10/Nov/2025 11:10:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
+[2025-11-10 11:11:13,179] INFO ratelimit 50 per 1 hour (127.0.0.1) exceeded at endpoint: api_status_providers
+[2025-11-10 11:11:13,192] INFO 127.0.0.1 - - [10/Nov/2025 11:11:13] "[31m[1mGET /api/status/providers HTTP/1.1[0m" 429 -
