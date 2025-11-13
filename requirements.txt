@@ -22,3 +22,4 @@ Flask-SocketIO
 Flask-Limiter
 scikit-learn
 gunicorn
+ddgs-search
