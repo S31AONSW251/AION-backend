@@ -4,8 +4,7 @@ requests
 redis
 apscheduler
 python-dotenv
-python-magic-bin; sys_platform == 'win32'
-python-magic; sys_platform != 'win32'
+python-magic
 Pillow
 pymupdf
 python-docx
@@ -17,9 +16,7 @@ diffusers
 transformers
 torch
 accelerate
-ddgs-search
+duckduckgo-search
 Flask-SocketIO
 Flask-Limiter
 scikit-learn
-gunicorn
-ddgs-search
