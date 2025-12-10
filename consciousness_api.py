@@ -48,6 +48,15 @@ def process_interaction():
         
         consciousness = get_consciousness_core()
         result = consciousness.process_interaction(user_id, user_input, response, context)
+        # Try to index the memory in the vector store for RAG
+        try:
+            # Create minimal document and call admin endpoint
+            doc = {'documents': [ { 'id': f'mem-{int(time.time())}', 'text': user_input + '\n' + response, 'metadata': {'source':'consciousness'}} ] }
+            # Local request to internal endpoint
+            import requests as _req
+            _req.post((request.host_url or 'http://localhost:5000').rstrip('/') + '/api/rag/ingest', json=doc, timeout=3)
+        except Exception:
+            pass
         
         return jsonify({
             'success': True,
