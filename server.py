@@ -337,6 +337,43 @@ MAX_HEIGHT = int(os.environ.get('MAX_HEIGHT', 1024))
 
 executor = ThreadPoolExecutor(max_workers=int(os.environ.get('VIDEO_WORKERS', 2)))
 
+# Periodic sync job to ensure semantic index is up-to-date
+def _sync_memories_to_vector_store():
+    try:
+        if not vector_store or not emb_provider:
+            return
+        con = sqlite3.connect(DB_FILE)
+        cur = con.cursor()
+        cur.execute('SELECT id, text, ts FROM memories')
+        rows = cur.fetchall()
+        docs = []
+        for r in rows:
+            mem_id, text, ts = r
+            docs.append({'id': f'mem-{mem_id}', 'text': text[:2000], 'metadata': {'source': 'memory', 'ts': ts}})
+        con.close()
+        if not docs:
+            return
+        # Batch ingest in reasonable sizes
+        batch_size = 40
+        for i in range(0, len(docs), batch_size):
+            batch = docs[i:i+batch_size]
+            for d in batch:
+                try:
+                    emb = emb_provider.embed(d['text'])
+                    vector_store.add(d['id'], d['text'], emb, d['metadata'])
+                except Exception:
+                    pass
+    except Exception as e:
+        print('[RAG] Memory sync failed:', e)
+
+try:
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(_sync_memories_to_vector_store, 'interval', minutes=int(os.environ.get('RAG_SYNC_INTERVAL_MIN', 10)))
+    scheduler.start()
+    print('[RAG] Scheduled periodic memory sync job')
+except Exception as e:
+    print('[RAG] Failed to start scheduler for memory sync:', e)
+
 
 def _cache_get(key: str) -> Optional[str]:
     try:
