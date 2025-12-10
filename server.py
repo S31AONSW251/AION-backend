@@ -1226,6 +1226,26 @@ def admin_check_http():
         except Exception as e:
             results[t] = {'error': str(e)}
     return jsonify({'ok': True, 'results': results})
+@app.route('/api/rag/status', methods=['GET'])
+def api_rag_status():
+    try:
+        if not vector_store or not emb_provider:
+            return jsonify({'ok': False, 'error': 'RAG not initialized'}), 500
+        stats = {
+            'type': vector_store.__class__.__name__,
+            'provider': 'qdrant' if 'Qdrant' in vector_store.__class__.__name__ else 'local',
+            'count': 0
+        }
+        try:
+            items = vector_store.all()
+            stats['count'] = len(items)
+        except Exception:
+            stats['count'] = None
+        return jsonify({'ok': True, 'status': stats})
+    except Exception as e:
+        traceback.print_exc()
+        return jsonify({'ok': False, 'error': str(e)}), 500
+
 
 
 @app.get('/env-info')
