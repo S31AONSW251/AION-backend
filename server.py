@@ -29,6 +29,12 @@ except Exception:
 try:
     from vector_store import VectorStore
     from embeddings_provider import EmbeddingsProvider
+    try:
+        from qdrant_store import QdrantStore, is_qdrant_available
+    except Exception:
+        QdrantStore = None
+        def is_qdrant_available():
+            return False
 except Exception:
     VectorStore = None
     EmbeddingsProvider = None
@@ -263,8 +269,18 @@ VECTOR_DB_FILE = os.path.join(DATA_DIR, 'vector_store.db')
 vector_store = None
 emb_provider = None
 try:
-    if VectorStore:
-        vector_store = VectorStore(VECTOR_DB_FILE)
+    # If Qdrant is available and configured via env, prefer it
+    qdrant_host = os.environ.get('QDRANT_HOST') or os.environ.get('QDRANT_URL')
+    if qdrant_host and is_qdrant_available() and QdrantStore:
+        try:
+            vector_store = QdrantStore(collection_name='aion_memories', host=qdrant_host, api_key=os.environ.get('QDRANT_API_KEY'))
+            print('[RAG] Vector store initialized using Qdrant')
+        except Exception as e:
+            print('[RAG] Failed to init Qdrant store, falling back to local VectorStore:', e)
+            vector_store = VectorStore(VECTOR_DB_FILE)
+    else:
+        if VectorStore:
+            vector_store = VectorStore(VECTOR_DB_FILE)
     if EmbeddingsProvider:
         emb_provider = EmbeddingsProvider()
     print('[RAG] Vector store and embeddings provider initialized')
@@ -1729,6 +1745,36 @@ def api_generate_stream():
                 except Exception as _e:
                     try:
                         yield (json.dumps({'type': 'error', 'data': str(_e)}) + '\n')
+
+
+            @app.route('/admin/vector/sync-memory', methods=['POST'])
+            def admin_vector_sync_memory():
+                try:
+                    admin_key = request.args.get('admin_key') or request.headers.get('X-ADMIN-KEY')
+                    if admin_key != ADMIN_KEY:
+                        return jsonify({'ok': False, 'error': 'unauthorized'}), 401
+                    if not vector_store or not emb_provider:
+                        return jsonify({'ok': False, 'error': 'vector components not initialized'}), 500
+                    con = sqlite3.connect(DB_FILE)
+                    cur = con.cursor()
+                    cur.execute('SELECT id, text, ts FROM memories')
+                    rows = cur.fetchall()
+                    ingested = 0
+                    for r in rows:
+                        mem_id, text, ts = r
+                        doc_id = f"mem-{mem_id}"
+                        metadata = { 'source': 'memory', 'ts': ts }
+                        try:
+                            emb = emb_provider.embed(text)
+                            vector_store.add(doc_id, text[:2000], emb, metadata)
+                            ingested += 1
+                        except Exception as e:
+                            print(f"[vector-sync] Failed to ingest memory {mem_id}: {e}")
+                    con.close()
+                    return jsonify({'ok': True, 'ingested': ingested})
+                except Exception as e:
+                    traceback.print_exc()
+                    return make_error(f"Failed to sync memories: {e}", 500)
                     except Exception:
                         yield ('error\n')
 
