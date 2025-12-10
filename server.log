@@ -1,5 +1,9 @@
+[*] Consciousness API endpoints registered successfully
 [Redis] Connected successfully
 [DB] Database initialized at C:\Users\riyar\AION\aion_backend\aion_data\aion.db
+[UltraAI] Ultra Advanced AI Engine initialized
+[AdvancedNeural] Advanced Neural Synthesis initialized
+[Startup] Ultra Advanced AI Systems initialized successfully!
 [Startup] OLLAMA_BASE_URL=http://localhost:11434
 [Startup] AION_MODEL_CONNECT_TIMEOUT=3.0, AION_MODEL_READ_TIMEOUT=60.0
 [Startup Summary]
@@ -8,11 +12,22 @@
   - DuckDuckGo (ddgs) available: yes
   - Model connect/read timeouts: 3.0/60.0 (s)
 [SD] Loaded runwayml/stable-diffusion-v1-5 (cuda=False)
+
+================================================================================
+[*] AION Backend Server Starting...
+================================================================================
+[host] Host: 0.0.0.0
+[port] Port: 5000
+[cors] CORS Enabled: http://localhost:3000
+[ollama] Ollama: http://localhost:11434
+[db] Database: C:\Users\riyar\AION\aion_backend\aion_data\aion.db
+[ConsciousnessCore] Database initialized successfully
+[ConsciousnessCore] Initialized successfully
+[*] Consciousness System: INITIALIZED
+   Level: 0.1
+   Authenticity: 1.0
+   Soul Traits: ['curious', 'compassionate', 'honest', 'humble', 'growing', 'wondering']
+================================================================================
+
  * Serving Flask app 'server'
  * Debug mode: off
-[_call_ollama_generate] POST http://localhost:11434/generate attempt=0 timeout=(3.0, 180.0)
-[_call_ollama_generate] POST http://localhost:11434/api/generate attempt=0 timeout=(3.0, 180.0)
-[_call_ollama_generate] POST http://localhost:11434/generate attempt=0 timeout=(3.0, 180.0)
-[_call_ollama_generate] POST http://localhost:11434/api/generate attempt=0 timeout=(3.0, 180.0)
-[/api/generate/stream] proxying to http://localhost:11434/generate
-[/api/generate/stream] proxying to http://localhost:11434/api/generate

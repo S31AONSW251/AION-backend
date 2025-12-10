@@ -1,0 +1,14 @@
+[Unit]
+Description=AION Backend
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/AION-backend
+Environment="PATH=/home/ubuntu/AION-backend/venv/bin"
+ExecStart=/home/ubuntu/AION-backend/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:8000 server:app
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+# CPU-friendly requirements for AION backend
+flask
+flask-cors
+requests
+redis
+apscheduler
+python-dotenv
+python-magic
+Pillow
+pymupdf
+python-docx
+pandas
+openpyxl
+numpy
+opencv-python
+diffusers
+transformers
+# torch is installed separately (CPU wheel)
+accelerate
+duckduckgo-search
+Flask-SocketIO
+Flask-Limiter
+scikit-learn
+gunicorn

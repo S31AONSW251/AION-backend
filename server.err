@@ -1,0 +1,17 @@
+C:\Users\riyar\Miniconda3\Lib\site-packages\flask_limiter\_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|#4        | 1/7 [00:00<00:00,  7.79it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading pipeline components...:  29%|##8       | 2/7 [00:00<00:01,  3.91it/s]Loading pipeline components...:  57%|#####7    | 4/7 [00:00<00:00,  7.88it/s]Loading pipeline components...: 100%|##########| 7/7 [00:00<00:00, 10.99it/s]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|##        | 1/5 [00:00<00:00,  4.99it/s]Loading pipeline components...:  40%|####      | 2/5 [00:01<00:01,  1.69it/s]Loading pipeline components...: 100%|##########| 5/5 [00:01<00:00,  4.38it/s]
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.67.8.251:5000
+Press CTRL+C to quit
+127.0.0.1 - - [30/Nov/2025 13:40:50] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [30/Nov/2025 13:43:13] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [30/Nov/2025 13:48:15] "POST /api/log-client-error HTTP/1.1" 404 -
+127.0.0.1 - - [30/Nov/2025 13:48:37] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [30/Nov/2025 13:48:57] "POST /api/log-client-error HTTP/1.1" 404 -
+127.0.0.1 - - [30/Nov/2025 13:50:03] "POST /api/log-client-error HTTP/1.1" 404 -
+127.0.0.1 - - [30/Nov/2025 13:50:36] "GET /api/log-client-error HTTP/1.1" 404 -
